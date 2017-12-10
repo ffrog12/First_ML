@@ -11,7 +11,7 @@ Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female',
 'female', 'male', 'male']
 
 #Data that prediction will run on
-testdata = [192,92,45]
+testdata = [160,59,40]
 
 # Tree Classifier
 clftree = tree.DecisionTreeClassifier()
