@@ -58,24 +58,13 @@ gnbacc = accuracy_score(testpredgnb, Ytest)
 
 #if svmacc >= treeacc or gnbacc:
 #   pass:
-print('SVM Prediction')
-print (predictionsvm)
-print (", accuracy score")
-print (svmacc * 100)
-print('%')
+print('SVM Prediction {}, accuracy score {}%'.format(predictionsvm,svmacc * 100))
 
 #elif treeacc > gnbacc:
 #   pass:
-print('Tree Prediction')
-print (predictiontree)
-print (", accuracy score")
-print (treeacc * 100)
-print('%')
+print('Tree Prediction {}, accuracy score {}%'.format(predictiontree,treeacc * 100))
+
 
 #else:
 #   pass:
-print('GNB Prediction')
-print (predictiongnb)
-print (", accuracy score")
-print (gnbacc * 100)
-print('%')
+print('GNB Prediction{}, accuracy score {}%'.format(predictiongnb,gnbacc * 100))
